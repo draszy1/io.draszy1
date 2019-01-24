@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'jucumber'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    dependencies {
+        testImplementation (
+                'org.junit.jupiter:junit-jupiter-api:5.3.1',
+                'io.cucumber:cucumber-java:4.2.2',
+                'io.cucumber:cucumber-junit:4.2.2',
+                'org.seleniumhq.selenium:selenium-java:3.141.59'
+        )
+
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    }
+
+}
